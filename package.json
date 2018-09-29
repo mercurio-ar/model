@@ -1,0 +1,19 @@
+{
+  "name": "model",
+  "version": "1.0.0",
+  "description": "model for mercurio-ar",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mercurio-ar/model.git"
+  },
+  "author": "Sebastian Gonzalez",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mercurio-ar/model/issues"
+  },
+  "homepage": "https://github.com/mercurio-ar/model#readme"
+}
