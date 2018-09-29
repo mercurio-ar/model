@@ -4,7 +4,35 @@
   "description": "model for mercurio-ar",
   "main": "index.js",
   "scripts": {
+    "lint": "eslint --fix ./src",
     "test": "jest"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged",
+      "pre-push": "npm test -- --coverage"
+    }
+  },
+  "lint-staged": {
+    "*.js": [
+      "eslint --fix",
+      "git add"
+    ]
+  },
+  "jest": {
+    "transform": {
+      "^.+\\.jsx?$": "babel-jest"
+    }
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-jest": "^23.6.0",
+    "babel-preset-env": "^1.7.0",
+    "eslint": "^5.6.1",
+    "husky": "^1.0.1",
+    "jest": "^23.6.0",
+    "jshint": "^2.9.6",
+    "lint-staged": "^7.3.0"
   },
   "repository": {
     "type": "git",
