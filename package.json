@@ -4,7 +4,7 @@
   "description": "model for mercurio-ar",
   "main": "src/index.ts",
   "scripts": {
-    "lint": "eslint --fix ./src",
+    "lint": "tslint --fix ./src",
     "test": "jest"
   },
   "husky": {
@@ -16,6 +16,10 @@
   "lint-staged": {
     "*.js": [
       "eslint --fix",
+      "git add"
+    ],
+    "*.ts": [
+      "tslint --fix",
       "git add"
     ]
   },
@@ -32,7 +36,8 @@
     "husky": "^1.0.1",
     "jest": "^23.6.0",
     "jshint": "^2.9.6",
-    "lint-staged": "^7.3.0"
+    "lint-staged": "^7.3.0",
+    "tslint": "^5.11.0"
   },
   "repository": {
     "type": "git",
@@ -43,5 +48,8 @@
   "bugs": {
     "url": "https://github.com/mercurio-ar/model/issues"
   },
-  "homepage": "https://github.com/mercurio-ar/model#readme"
+  "homepage": "https://github.com/mercurio-ar/model#readme",
+  "dependencies": {
+    "typescript": "^3.1.1"
+  }
 }
