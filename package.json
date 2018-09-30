@@ -2,8 +2,10 @@
   "name": "@mercurio-ar/model",
   "version": "1.0.0",
   "description": "model for mercurio-ar",
-  "main": "src/index.ts",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "scripts": {
+    "build": "tsc",
     "lint": "tslint --fix ./src",
     "test": "jest"
   },
@@ -37,7 +39,8 @@
     "jest": "^23.6.0",
     "jshint": "^2.9.6",
     "lint-staged": "^7.3.0",
-    "tslint": "^5.11.0"
+    "tslint": "^5.11.0",
+    "typescript": "^3.1.1"
   },
   "repository": {
     "type": "git",
@@ -48,8 +51,5 @@
   "bugs": {
     "url": "https://github.com/mercurio-ar/model/issues"
   },
-  "homepage": "https://github.com/mercurio-ar/model#readme",
-  "dependencies": {
-    "typescript": "^3.1.1"
-  }
+  "homepage": "https://github.com/mercurio-ar/model#readme"
 }
